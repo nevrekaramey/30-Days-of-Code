@@ -3,5 +3,6 @@ require 'stringio'
 
 n = gets.to_i
 arr = gets.rstrip.split(' ').map(&:to_i)
-output = arr.reverse.join(" ")
-puts output
+for i in (1..n) do
+    print arr[n-i], " "
+end
